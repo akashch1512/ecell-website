@@ -5,10 +5,15 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'picsum.photos',
-                pathname: "/**"
+                pathname: '/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'i.postimg.cc', // Add this line
+                pathname: '/**', // Adjust if you need more specific paths
             }
-        ]
-    }
+        ],
+    },
 };
 
 export default nextConfig;

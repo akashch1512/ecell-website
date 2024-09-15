@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Groesk:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --primary: #f56565;
+  --primary: #ee6161;
 }
 
 @media (prefers-color-scheme: dark) {

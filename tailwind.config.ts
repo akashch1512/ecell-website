@@ -14,10 +14,12 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        "primary": "rgb(59 130 246)"
-      }
+        "primary": "rgb(59 130 246)",
+        "default-text": "#ffffff", // Added here
+      },
     },
   },
   plugins: [],
 };
+
 export default config;

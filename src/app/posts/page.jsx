@@ -29,10 +29,10 @@ export default function Blogs() {
 
     return (
         <main className="mb-auto">
-            <h1 className="title-xl">All posts</h1>
+            <h1 className="title-xl text-white">All posts</h1>
             <div className="flex gap-16">
                 <section className="hidden max-h-96 flex-1 flex-col items-start gap-1 overflow-x-auto rounded-lg bg-gray-100 p-4 sm:flex ">
-                    <h3 className="font-bold text-primary">All tags</h3>
+                    <h3 className="font-bold text-primary ">All tags</h3>
                     {
                         tags.map((tag, i) => (
                             <button key={i} className="ml-4 text-left text-sm font-medium text-gray-700 hover:text-blue-600">
@@ -46,15 +46,15 @@ export default function Blogs() {
                         <SearchBar onChange={(value) => { }} />
                     </div>
 
-                    <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
+                    <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 text-white">
                         {
                             Array(4).fill(0).map((_, i) => (
                                 <ArticleCard
                                     key={i}
-                                    thumbnail="https://picsum.photos/300/200?random=1"
-                                    title="Lorem ipsum dolor sit amet consectetur."
-                                    content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim illum..."
-                                    author={{ name: "FirsName Last", avatar: "https://picsum.photos/300/200?random=1" }}
+                                    thumbnail="https://i.postimg.cc/vHKcVDLY/akash.jpg"
+                                    title="Srujan Event Conducted By Ecell JNEC."
+                                    content="Srujan is an innovative event focused on fostering creativity and entrepreneurship among students. It features a series of workshops, talks, and competitions designed to inspire and equip participants with the skills needed to bring their ideas to life"
+                                    author={{ name: "ECELL JNEC", avatar: "https://picsum.photos/300/200?random=1" }}
                                     date="16 janv 2024"
                                 />
                             ))
