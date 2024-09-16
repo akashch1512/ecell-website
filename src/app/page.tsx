@@ -20,7 +20,7 @@ export default function Home() {
                 thumbnail="https://i.postimg.cc/vHKcVDLY/akash.jpg"
                 title="Srujan Event Conducted By Ecell JNEC"
                 content="Srujan is an innovative event focused on fostering creativity and entrepreneurship among students. It features a series of workshops, talks, and competitions designed to inspire and equip participants with the skills needed to bring their ideas to life"
-                author={{ name: "ECELL JNEC", avatar: "https://picsum.photos/300/200?random=1" }}
+                author={{ name: "ECELL JNEC", avatar: "https://i.postimg.cc/vHKcVDLY/akash.jpg" }}
                 date="16 janv 2024"
               />
             ))

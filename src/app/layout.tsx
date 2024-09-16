@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={grotesk.className}>
       <div
   className="container mx-auto flex min-h-screen flex-col overflow-hidden px-6 py-8 sm:px-14 sm:py-16 lg:px-28"
-  style={{ backgroundImage: "url('https://wallpaperbat.com/img/127927-mobile-wallpaper-image-by-vactual-papers-dark-phone-wallpaper.jpg')" }}
+  style={{ backgroundImage: "url('https://wallpapercave.com/wp/wp5288680.jpg')" }}
 >
           <Header />
           {children}
