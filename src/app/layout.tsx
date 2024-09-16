@@ -5,8 +5,8 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Hashnode blog",
-  description: "Hashnode blog",
+  title: " ECELL JNEC",
+  description: "ECELL JNEC",
 };
 
 const grotesk = Space_Grotesk({
