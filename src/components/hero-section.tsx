@@ -12,7 +12,7 @@ function HeroSection() {
             </div>
             <div className="flex flex-col gap-6 sm:relative sm:text-white">
                 <Image
-                    src="/Images/syaed gift.JPG" width={300} height={200} alt="hero image"
+                    src="/Images/hero image.svg" width={300} height={200} alt="hero image"
                     className="max-h-[300px] min-w-full rounded-3xl object-cover object-center sm:max-h-[600px]"
                 />
                 <div className="sm:absolute sm:bottom-0 sm:m-8 sm:rounded-2xl sm:border sm:border-black/30 sm:p-6 sm:py-5 sm:backdrop-blur-2xl text-white">
