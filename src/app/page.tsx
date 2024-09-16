@@ -13,18 +13,23 @@ export default function Home() {
           <a href="" className="blue-button">View all</a>
         </div>
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 text-white">
-          {
-            Array(3).fill(0).map((_, i) => (
               <ArticleCard
-                key={i}
+                key="1"
                 thumbnail="https://i.postimg.cc/vHKcVDLY/akash.jpg"
                 title="Srujan Event Conducted By Ecell JNEC"
                 content="Srujan is an innovative event focused on fostering creativity and entrepreneurship among students. It features a series of workshops, talks, and competitions designed to inspire and equip participants with the skills needed to bring their ideas to life"
-                author={{ name: "ECELL JNEC", avatar: "https://i.postimg.cc/vHKcVDLY/akash.jpg" }}
+                author={{ name: "ECELL JNEC", avatar: "/Images/ECELL JNEC.png" }}
                 date="16 janv 2024"
               />
-            ))
-          }
+            <ArticleCard
+                key="1"
+                thumbnail="/Images/srujan.jpg"
+                title="Srujan Event Conducted By Ecell JNEC"
+                content="Srujan is an innovative event focused on fostering creativity and entrepreneurship among students. It features a series of workshops, talks, and competitions designed to inspire and equip participants with the skills needed to bring their ideas to life"
+                author={{ name: "ECELL JNEC", avatar: "/Images/ECELL JNEC.png" }}
+                date="16 janv 2024"
+              />
+
         </div>
         <button className="blue-button mx-auto mt-8 w-max">Loading more...</button>
       </section>
