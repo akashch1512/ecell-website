@@ -24,8 +24,9 @@ export default function Home() {
             <ArticleCard
                 key="1"
                 thumbnail="/Images/srujan.jpg"
-                title="Srujan Event Conducted By Ecell JNEC"
-                content="Srujan is an innovative event focused on fostering creativity and entrepreneurship among students. It features a series of workshops, talks, and competitions designed to inspire and equip participants with the skills needed to bring their ideas to life"
+                title="QR Quest Winners Announced!"
+                content="Congratulations to both Sayyad Malik and Zubiya & Swarali for their outstanding performance!
+      A big thank you to all participants for making QR Quest a success. Stay tuned for more exciting events!"
                 author={{ name: "ECELL JNEC", avatar: "/Images/ECELL JNEC.png" }}
                 date="16 janv 2024"
               />
