@@ -15,7 +15,7 @@ function HeroSection() {
                     src="/Images/hero image.svg" width={300} height={200} alt="hero image"
                     className="max-h-[300px] min-w-full rounded-3xl object-cover object-center sm:max-h-[600px]"
                 />
-                <div className="sm:absolute sm:bottom-0 sm:m-8 sm:rounded-2xl sm:border sm:border-black/30 sm:p-6 sm:py-5 sm:backdrop-blur-2xl text-white">
+                <div className="sm:absolute sm:bottom-0 sm:m-8 sm:rounded-2xl sm:border sm:border-black/30 sm:p-6 sm:py-5 sm:backdrop-blur-2xl bg-black text-white">
                     <div className="flex flex-col gap-1 sm:max-w-[100%] sm:gap-2">
                         <div className="font-bold sm:block text-white">Most popular</div>
                         <Link href="post">

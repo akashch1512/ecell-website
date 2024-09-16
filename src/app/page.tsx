@@ -15,7 +15,7 @@ export default function Home() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 text-white">
               <ArticleCard
                 key="1"
-                thumbnail="https://i.postimg.cc/vHKcVDLY/akash.jpg"
+                thumbnail="/Images/The First Step.svg"
                 title="Srujan Event Conducted By Ecell JNEC"
                 content="Srujan is an innovative event focused on fostering creativity and entrepreneurship among students. It features a series of workshops, talks, and competitions designed to inspire and equip participants with the skills needed to bring their ideas to life"
                 author={{ name: "ECELL JNEC", avatar: "/Images/ECELL JNEC.png" }}
