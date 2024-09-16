@@ -24,9 +24,11 @@ export default function Home() {
             <ArticleCard
                 key="1"
                 thumbnail="/Images/srujan.jpg"
-                title="QR Quest Winners Announced!"
-                content="Congratulations to both Sayyad Malik and Zubiya & Swarali for their outstanding performance!
-      A big thank you to all participants for making QR Quest a success. Stay tuned for more exciting events!"
+                title="The QR Quest!"
+                content="Story with clues for The QR Quest is up 📷📱
+
+Do remember to click a selfie with the QR, and tag us on instagram @ecell_jnec
+"
                 author={{ name: "ECELL JNEC", avatar: "/Images/ECELL JNEC.png" }}
                 date="16 janv 2024"
               />
