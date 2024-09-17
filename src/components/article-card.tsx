@@ -8,8 +8,23 @@ interface Author {
     avatar: string;
 }
 
-export default function ArticleCard({ thumbnail, title, content, author, date, className }: { thumbnail: string, title: string, content: string, author: Author, date: string, className?: string }) {
-    const postUrl = "post";
+export default function ArticleCard({
+    thumbnail,
+    title,
+    content,
+    author,
+    date,
+    postUrl,
+    className
+}: {
+    thumbnail: string;
+    title: string;
+    content: string;
+    author: Author;
+    date: string;
+    postUrl: string;
+    className?: string;
+}) {
     return (
         <div className={className}>
             <Link href={postUrl}>
@@ -25,7 +40,7 @@ export default function ArticleCard({ thumbnail, title, content, author, date, c
                     </Link>
                 </div>
                 <Link href={postUrl}>
-                    <p >{content}</p>
+                    <p>{content}</p>
                 </Link>
                 <div className="mt-2 flex items-center gap-1 font-bold">
                     <Avatar src={author.avatar} alt="avatar" size={32} />
@@ -38,11 +53,12 @@ export default function ArticleCard({ thumbnail, title, content, author, date, c
     );
 };
 
-// Exemple of use:
+// Example of use:
 // <ArticleCard
 //     thumbnail="https://picsum.photos/300/200?random=1"
 //     title="Lorem ipsum dolor sit amet consectetur."
-//     description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim illum quo architecto aspernatur, nisi necessitatibus tempora suscipit expedita ullam tenetur..."
-//     author={{name: "FirsName Last", avatar: "https://picsum.photos/300/200?random=1"}}
-//     date="16 janv 2024"
+//     content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim illum quo architecto aspernatur, nisi necessitatibus tempora suscipit expedita ullam tenetur..."
+//     author={{ name: "FirstName Last", avatar: "https://picsum.photos/300/200?random=1" }}
+//     date="16 Jan 2024"
+//     postUrl="https://example.com"
 // />

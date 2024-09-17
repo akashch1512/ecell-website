@@ -4,7 +4,7 @@ import React from 'react'
 import { TbArrowBack } from 'react-icons/tb'
 
 function Post() {
-  return (
+  return ( 
     <main className='mb-auto text-gray-200'>
       <div className='text-center'>
         <div className='mb-4 font-bold text-gray-400'>Saturday, September 1, 2024</div>
