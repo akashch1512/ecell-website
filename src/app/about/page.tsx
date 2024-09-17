@@ -13,9 +13,9 @@ function About() {
                 imgSrc: "/Team/akash.jpg"
             },
             {
-                name: "Revealing Soon",
+                name: "Nirbhay Khedekar",
                 role: "Vice Secretary",
-                imgSrc: "/Team/OIP (1).jpeg"
+                imgSrc: "/Team/nirbhay.jpg"
             },
             {
                 name: "Steven Dsilva",
@@ -23,9 +23,9 @@ function About() {
                 imgSrc: "/Team/Steven.svg"
             },
             {
-                name: "Revealing Soon",
+                name: "Jasjot Singh",
                 role: "Tech Head",
-                imgSrc: "/Team/OIP (1).jpeg"
+                imgSrc: "/Team/jasjot.jpg"
             },
             {
                 name: "Shraddha Pardeshi",
