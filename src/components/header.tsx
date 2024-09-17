@@ -30,7 +30,7 @@ export default function Header() {
     src="/Images/image-removebg-preview.png"  // path to your image
     alt="E-CELL JNEC Logo" 
     width={100} // adjust the width as per your requirement
-    height={25} // adjust the height as per your requirement
+    height={30} // adjust the height as per your requirement
     className="object-contain"
 />
             <div className={`fixed right-0 top-0 ${open ? 'flex' : 'hidden'} z-10 w-full h-full gap-4 bg-gray-900/95 sm:static sm:flex sm:w-auto sm:h-auto sm:bg-transparent`}>
