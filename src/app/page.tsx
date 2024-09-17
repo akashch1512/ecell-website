@@ -15,33 +15,32 @@ export default function Home() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 text-white">
               <ArticleCard
                 key="1"
-                thumbnail="/Images/The First Step.svg"
-                title="Srujan Event Conducted By Ecell JNEC"
-                content="Srujan is an innovative event focused on fostering creativity and entrepreneurship among students. It features a series of workshops, talks, and competitions designed to inspire and equip participants with the skills needed to bring their ideas to life"
+                thumbnail="/Images/What is a startup .svg"
+                title="Launch Event: E-Cell JNEC"
+                content="We are excited to announce the launch of E-Cell JNEC, Although we are participating in the prestigious National Entrepreneurship Challenge (NEC) 2024 by E-Cell IIT Bombay, our mission is to build our own entrepreneurial community through events, workshops, and competitions"
                 author={{ name: "ECELL JNEC", avatar: "/Images/ECELL JNEC.png" }}
-                date="16 janv 2024"
+                date="6 Sept 2024"
               />
             <ArticleCard
                 key="1"
                 thumbnail="/Images/srujan.jpg"
-                title="The QR Quest!"
-                content="Story with clues for The QR Quest is up 📷📱
+                title="The QR Quest Winners!"
+                content="Congratulations to Sayyad Malik, Zubiya, and Her Partner!
 
-Do remember to click a selfie with the QR, and tag us on instagram @ecell_jnec
-"
+A huge round of applause to all 22 participants for your fantastic performance in the competition. Each of you showed great enthusiasm and effort, making this event a success!
+
+Special recognition goes to Sayyad Malik, who emerged as the top performer with an impressive 54 scans. Following closely behind, we have our second-place winners, Zubiya and her partner, with 49 scans."
                 author={{ name: "ECELL JNEC", avatar: "/Images/ECELL JNEC.png" }}
-                date="16 janv 2024"
+                date="14 Sept 2024"
               />
-
-<ArticleCard
+              <ArticleCard
                 key="1"
                 thumbnail="/Images/The First Step.svg"
                 title="Srujan Event Conducted By Ecell JNEC"
-                content="Srujan is an innovative event focused on fostering creativity and entrepreneurship among students. It features a series of workshops, talks, and competitions designed to inspire and equip participants with the skills needed to bring their ideas to life"
+                content="marking the beginning of an exciting entrepreneurial journey. The event featured an engaging orientation and introduction, followed by a thought-provoking guest talk on 'Ideation.' Attendees also benefited from a dynamic panel discussion that explored various aspects of innovation. The event concluded with the launch of the team recruitment drive, giving participants the chance to join and contribute to the E-Cell."
                 author={{ name: "ECELL JNEC", avatar: "/Images/ECELL JNEC.png" }}
-                date="16 janv 2024"
+                date="14 Sept 2024"
               />
-
           
         </div>
 
