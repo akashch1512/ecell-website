@@ -53,7 +53,7 @@ Special recognition goes to Sayyad Malik, who emerged as the top performer with 
                 title="The QR Quest Event"
                 content=""
                 author={{ name: "ECELL JNEC", avatar: "/Images/ECELL JNEC.png" }}
-                date="16 janv 2024"
+                date="13 Sept 2024"
               />
               <ArticleCard
                 key="1"
@@ -61,7 +61,7 @@ Special recognition goes to Sayyad Malik, who emerged as the top performer with 
                 title="Srujan Event"
                 content=""
                 author={{ name: "ECELL JNEC", avatar: "/Images/ECELL JNEC.png" }}
-                date="16 janv 2024"
+                date="14 Sept 2024"
               />
               </div>
         <button className="blue-button mx-auto mt-8 w-max">Loading more...</button>
