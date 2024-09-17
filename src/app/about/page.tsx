@@ -39,7 +39,7 @@ function About() {
             },
             {
                 name: "Gaurav Padalkar",
-                role: "Event Head | AI-Robotics Student",
+                role: "Event Head | Mechatronics Student",
                 imgSrc: "/Team/gaurav.jpg"
             },
             {
