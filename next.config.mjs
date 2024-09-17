@@ -11,6 +11,11 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'wallpapers.ispazio.net', // Add this line
                 pathname: '/**', // Adjust if you need more specific paths
+            },
+            {
+                protocol: 'https',
+                hostname: 'i.postimg.cc', // Add this line
+                pathname: '/**', // Adjust if you need more specific paths
             }
         ],
     },
