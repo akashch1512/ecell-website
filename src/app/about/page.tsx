@@ -19,7 +19,7 @@ function About() {
             },
             {
                 name: "Steven Dsilva",
-                role: "Design Head | ECS Studnet",
+                role: "Design & Social Media Head",
                 imgSrc: "/Team/Steven.svg"
             },
             {
