@@ -13,7 +13,7 @@ function Post() {
         </h1>
         <div className='mt-4 flex items-center justify-center gap-4 text-left lg:hidden'>
           <Avatar
-            src='https://i.postimg.cc/qvvgGVDj/aka.jpg'
+            src='/Images/ECELL JNEC.png'
             alt='avatar'
             size={48}
           />

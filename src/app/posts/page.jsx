@@ -41,6 +41,7 @@ export default function Blogs() {
                                 content="We are excited to announce the launch of E-Cell JNEC, Although we are participating in the prestigious National Entrepreneurship Challenge (NEC) 2024 by E-Cell IIT Bombay, our mission is to build our own entrepreneurial community through events, workshops, and competitions."
                                 author={{ name: "ECELL JNEC", avatar: "/Images/ECELL JNEC.png" }}
                                 date="6 Sept 2024"
+                                postUrl="launch"
                             />
                             <ArticleCard
                                 key="srujan-event"
@@ -49,6 +50,7 @@ export default function Blogs() {
                                 content="Marking the beginning of an exciting entrepreneurial journey. The event featured an engaging orientation and introduction, followed by a thought-provoking guest talk on 'Ideation.' Attendees also benefited from a dynamic panel discussion that explored various aspects of innovation. The event concluded with the launch of the team recruitment drive, giving participants the chance to join and contribute to the E-Cell."
                                 author={{ name: "ECELL JNEC", avatar: "/Images/ECELL JNEC.png" }}
                                 date="14 Sept 2024"
+                                postUrl="srujan"
                             />
                             <ArticleCard
                                 key="QR Quest"
@@ -57,6 +59,7 @@ export default function Blogs() {
                                 content="Congratulations to Sayyad Malik, Zubiya, and Her Partner! A huge round of applause to all 22 participants for your fantastic performance in the competition. Each of you showed great enthusiasm and effort, making this event a success! Special recognition goes to Sayyad Malik, who emerged as the top performer with an impressive 54 scans. Following closely behind, we have our second-place winners, Zubiya and her partner, with 49 scans."
                                 author={{ name: "ECELL JNEC", avatar: "/Images/ECELL JNEC.png" }}
                                 date="14 Sept 2024"
+                                postUrl="qrquest"
                             />
                             <ArticleCard
                                 key="what-is-ecell"
@@ -65,6 +68,7 @@ export default function Blogs() {
                                 content="What is E-Cell JNEC? Our Motive: Why We Do What We Do Our Vision: Shaping the Future of Innovation E-Cell JNEC is committed to helping students unlock their full potential, transforming their ideas into successful ventures that make a difference."
                                 author={{ name: "ECELL JNEC", avatar: "/Images/ECELL JNEC.png" }}
                                 date="14 Sept 2024"
+                                postUrl="post"
                             />
                         </>
                     </div>

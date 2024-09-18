@@ -8,8 +8,7 @@ interface Author {
     avatar: string;
 }
 
-export default function ArticleCard({ thumbnail, title, content, author, date, className }: { thumbnail: string, title: string, content: string, author: Author, date: string, className?: string }) {
-    const postUrl = "post";
+export default function ArticleCard({ thumbnail, title, content, author, date, postUrl, className }: { thumbnail: string, title: string, content: string, author: Author, date: string, postUrl: string, className?: string }) {
     return (
         <div className={className}>
             <Link href={postUrl}>
@@ -37,12 +36,3 @@ export default function ArticleCard({ thumbnail, title, content, author, date, c
         </div>
     );
 };
-
-// Exemple of use:
-// <ArticleCard
-//     thumbnail="https://picsum.photos/300/200?random=1"
-//     title="Lorem ipsum dolor sit amet consectetur."
-//     description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim illum quo architecto aspernatur, nisi necessitatibus tempora suscipit expedita ullam tenetur..."
-//     author={{name: "FirsName Last", avatar: "https://picsum.photos/300/200?random=1"}}
-//     date="16 janv 2024"
-// />
