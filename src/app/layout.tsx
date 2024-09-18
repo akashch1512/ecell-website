@@ -27,7 +27,7 @@ export default function RootLayout({
       <div
   className="flex flex-col overflow-auto px-6 py-8 sm:px-14 sm:py-16 lg:px-28 bg-cover bg-center min-h-screen"
   style={{
-    backgroundImage: "url('https://wallpapers.ispazio.net/wp-content/uploads/2022/12/ispazio-78.jpg')",
+    backgroundImage: "url('https://i.postimg.cc/W30wn7qb/bag.png')",
   }}
 >
 
