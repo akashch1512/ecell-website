@@ -37,7 +37,7 @@ function HeroSection() {
             <div className="font-bold sm:block text-white">Most popular</div>
             <Link href="post">
               <h3 className="text-3xl font-bold sm:text-3xl text-white">
-                What is E-Cell JNEC? Why Was It Started?
+            Eureka 2K24 !  Click here for Details!!!
               </h3>
             </Link>
             <div className="mt-2 flex items-center gap-1 font-bold sm:hidden">

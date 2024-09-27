@@ -1,88 +1,89 @@
-import Avatar from '@/components/avatar'
-import Link from 'next/link'
-import React from 'react'
-import { TbArrowBack } from 'react-icons/tb'
+import React from 'react';
+import { TbArrowBack } from 'react-icons/tb'; // If you want to use the back icon somewhere
+import Image from 'next/image'; // Assuming you're using Next.js for React
 
-function Post() {
+function Eureka2024() {
   return (
-    <main className='mb-auto text-gray-200'>
-      <div className='text-center'>
-        <div className='mb-4 font-bold text-gray-400'>Saturday, September 1, 2024</div>
-        <h1 className='title-xl m-0 border-b-0 p-0 lg:mb-12 lg:border-b lg:pb-8 text-primary-500'>
-          What is E-Cell JNEC? Why Was It Started?
-        </h1>
-        <div className='mt-4 flex items-center justify-center gap-4 text-left lg:hidden'>
-          <Avatar
-            src='/Images/ECELL JNEC.png'
-            alt='avatar'
-            size={48}
-          />
+    <main className='text-gray-900 bg-white px-8 py-12'>
+      {/* Header Section */}
+      <header className='text-center mb-8'>
+        <h1 className='text-4xl font-bold text-primary-500 mb-4'>Eureka 2024 Business Model Pitching Competition</h1>
+        <p className='text-xl text-gray-700'>
+          Are you ready to bring your innovative ideas to life and showcase your entrepreneurial spirit?
+        </p>
+      </header>
+
+      {/* Participation Steps */}
+      <section className='text-center mb-16'>
+        <h2 className='text-2xl font-semibold text-primary-500 mb-6'>How to Participate</h2>
+        <p className='text-lg text-gray-700'>
+          To complete your registration, follow these steps:
+        </p>
+        <div className='mt-6 space-y-6'>
           <div>
-            <div className='text-primary-400'>E-Cell JNEC</div>
-            <a className='text-blue-500 hover:underline' href="#">~ Akash Chaudhari</a>
+            <a href='https://www.ecell.in/eureka/' target='_blank' rel='noopener noreferrer'>
+              <button className='bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition'>
+                Register on the IIT Bombay Eureka Portal
+              </button>
+            </a>
+          </div>
+          <div>
+            <a href='https://forms.gle/vKThBTqqNXKBMmP3A' target='_blank' rel='noopener noreferrer'>
+              <button className='bg-green-500 text-white py-2 px-6 rounded-md hover:bg-green-600 transition'>
+                Register on E-Cell JNEC Registration Form
+              </button>
+            </a>
           </div>
         </div>
+        <p className='mt-4 text-red-500 text-sm font-semibold'>
+          📝 Note: Both registrations are mandatory for valid participation.
+        </p>
+      </section>
 
-        <div className='mt-8 flex gap-16 text-left'>
-          <div className='hidden min-w-2 max-w-48 flex-col items-start gap-12 lg:flex'>
-            <div className='flex items-center justify-center gap-4 text-left'>
-              <Avatar
-                src='/Images/ECELL JNEC.png'
-                alt='avatar'
-                size={48}
-              />
-              <div>
-                <div className='text-primary-400'>E-Cell JNEC</div>
-                <a className='text-blue-500 hover:underline' href="#">~ Akash</a>
-              </div>
-            </div>
-            <div>
-              <h2 className='text-sm uppercase text-primary-300'>Tags</h2>
-              <div className='flex flex-wrap gap-2'>
-                <a href="#" className='uppercase text-blue-400 hover:text-blue-500'>tag1</a>
-                <a href="#" className='uppercase text-blue-400 hover:text-blue-500'>tag2</a>
-                <a href="#" className='uppercase text-blue-400 hover:text-blue-500'>tag3</a>
-              </div>
-            </div>
-            <div>
-              <h2 className='text-sm uppercase text-primary-300'>Previous article</h2>
-              <Link href="#" className="text-blue-400 hover:text-blue-500">No Last Article</Link>
-            </div>
-            <Link href="/posts" className='flex items-center gap-2 text-blue-400 hover:text-blue-500'>
-              <TbArrowBack /> Back to the blog
-            </Link>
-          </div>
-
-          {/* Content of the article */}
-          <div className='flex-1'>
-            <div className='flex flex-col gap-8'>
-              <h2 className='text-2xl text-primary-500'>What is E-Cell JNEC?</h2>
-              <p className='text-gray-300'>
-              E-Cell JNEC (Entrepreneurship Cell of Jawaharlal Nehru Engineering College) is a student-driven initiative that aims to ignite the entrepreneurial mindset among students. Established to bridge the gap between academic knowledge and real-world business challenges, E-Cell JNEC serves as a launchpad for aspiring innovators and entrepreneurs. It was started with the vision of creating a supportive ecosystem where students can explore entrepreneurship, work on innovative solutions, and bring their ideas to life.
-              </p>
-              <h2 className='text-2xl text-primary-500'>Our Motive: Why We Do What We Do</h2>
-              <p className='text-gray-300'>
-              The core motive of E-Cell JNEC is to empower students with the skills, resources, and mentorship necessary to thrive in the startup world. We believe that fostering an entrepreneurial culture is essential for driving creativity, solving pressing challenges, and contributing to economic growth. Through workshops, mentorship programs, and competitions, we aim to:<br /><br />
-
-              •  <span className='text-primary-400'>Inspire students</span> to think beyond traditional career paths.<br />
-              •  Provide <span className='text-primary-400'>hands-on experience</span> in entrepreneurship.<br />
-              •  Equip future leaders with the ability to innovate and adapt in a rapidly changing world.
-              </p>
-              <h2 className='text-2xl text-primary-500'>Our Vision: Shaping the Future of Innovation</h2>
-              <p className='text-gray-300'>
-              Our vision is to make JNEC a hub of innovation and entrepreneurship that attracts and nurtures the next generation of changemakers. By 2030, we aspire to:<br /><br />
-              •  Support the creation of <span className='text-primary-400'>50+ successful student-led startups</span>.<br />
-              •  Host <span className='text-primary-400'>100+ events</span> that challenge and inspire entrepreneurial thinking.<br />
-              •  Build strong industry ties to ensure students have the opportunities and connections to succeed in the competitive startup landscape.<br /><br />
-
-              E-Cell JNEC is committed to helping students unlock their full potential, transforming their ideas into successful ventures that make a difference.
-              </p>
-            </div>
-          </div>
+      {/* Flowchart Section */}
+      <section className='mb-16'>
+        <h2 className='text-2xl font-semibold text-primary-500 mb-6 text-center'>Participation Flow</h2>
+        <div className='flex justify-center'>
+          {/* Example Image */}
+          <Image
+            src='/Images/flowchart.png'
+            alt='Flowchart of the Participation Process'
+            width={800}
+            height={400}
+          />
         </div>
-      </div>
+      </section>
+
+      {/* Event Details Section */}
+      <section className='mb-16'>
+        <h2 className='text-2xl font-semibold text-primary-500 mb-6 text-center'>Event Details</h2>
+        <div className='text-lg text-gray-700'>
+          <p>📅 <strong>Date:</strong> 1st October 2024</p>
+          <p>🕒 <strong>Time:</strong> 10:00 AM to 5:00 PM</p>
+          <p>📍 <strong>Venue:</strong> Aryabhatta Hall, MGMU JNEC</p>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className='text-center'>
+        <h2 className='text-2xl font-semibold text-primary-500 mb-6'>Need Help?</h2>
+        <p className='text-lg text-gray-700 mb-4'>
+          If you have any queries regarding the event, please feel free to contact:
+        </p>
+        <p className='text-lg text-gray-700'>
+          <strong>Akash:</strong> 9545441133 <br />
+          <strong>Nirbhay:</strong> 8390600361
+        </p>
+        <div className='mt-6'>
+          <a href='https://chat.whatsapp.com/LumSsJwyCyW2PSHxiPVMQs' target='_blank' rel='noopener noreferrer'>
+            <button className='bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition'>
+              Join WhatsApp Group for Updates
+            </button>
+          </a>
+        </div>
+      </section>
     </main>
-  )
+  );
 }
 
-export default Post
+export default Eureka2024;
