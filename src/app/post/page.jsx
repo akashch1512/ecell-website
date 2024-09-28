@@ -46,7 +46,7 @@ function Eureka2024() {
         <div className='flex justify-center'>
           {/* Example Image */}
           <Image
-            src='/Images/flowchart.png'
+            src='/Images/flowchart.gif'
             alt='Flowchart of the Participation Process'
             width={800}
             height={400}
