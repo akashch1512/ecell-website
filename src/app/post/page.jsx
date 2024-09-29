@@ -129,14 +129,14 @@ function Eureka2024() {
           <strong>Nirbhay:</strong> 8390600361
         </p>
         <div className='mt-6'>
-          <a href='https://chat.whatsapp.com/LumSsJwyCyW2PSHxiPVMQs' target='_blank' rel='noopener noreferrer'>
+          <a href='https://youtu.be/ObDPKj75Eg0?si=9iGAbhduiI8HHDik' target='_blank' rel='noopener noreferrer'>
             <button className='bg-red-500 text-white py-2 px-6 rounded-md hover:bg-red-600 transition'>
               For Help While Registration
             </button>
           </a>
         </div>
         <div className='mt-6'>
-          <a href='https://youtu.be/ObDPKj75Eg0?si=9iGAbhduiI8HHDik' target='_blank' rel='noopener noreferrer'>
+          <a href='https://chat.whatsapp.com/LumSsJwyCyW2PSHxiPVMQs' target='_blank' rel='noopener noreferrer'>
             <button className='bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition'>
               Join WhatsApp Group for Updates
             </button>
