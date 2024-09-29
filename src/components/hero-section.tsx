@@ -25,13 +25,25 @@ function HeroSection() {
         </p>
       </div>
       <div className="flex flex-col gap-6 sm:relative sm:text-white">
-        <Image
-          src="/Images/hero image.svg"
+        {/* <Image
+          src="/Images/EUREKA Video.mp4"
           width={300}
           height={200}
           alt="hero image"
           className="max-h-[300px] min-w-full rounded-3xl object-cover object-center sm:max-h-[600px]"
-        />
+        /> */}
+         <video
+    src="/Images/EUREKA Video.mp4"
+    width={300}
+    height={200}
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="max-h-[300px] min-w-full rounded-3xl object-cover object-center sm:max-h-[600px]"
+  >
+    Your browser does not support the video tag.
+  </video>
         <div className="sm:absolute sm:bottom-0 sm:m-8 sm:rounded-2xl sm:border sm:border-black/30 sm:p-6 sm:py-5 sm:backdrop-blur-2xl sm:bg-black text-white">
           <div className="flex flex-col gap-1 sm:max-w-[100%] sm:gap-2">
             <div className="font-bold sm:block text-white">Most popular</div>

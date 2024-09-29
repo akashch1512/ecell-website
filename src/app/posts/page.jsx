@@ -61,7 +61,7 @@ export default function Blogs() {
                                 date="14 Sept 2024"
                                 postUrl="qrquest"
                             />
-                            <ArticleCard
+                            {/* <ArticleCard
                                 key="what-is-ecell"
                                 thumbnail="/Images/hero image.svg"
                                 title="What is E-Cell JNEC? Why Was It Started?"
@@ -69,7 +69,7 @@ export default function Blogs() {
                                 author={{ name: "ECELL JNEC", avatar: "/Images/ECELL JNEC.png" }}
                                 date="14 Sept 2024"
                                 postUrl="post"
-                            />
+                            /> */}
                         </>
                     </div>
                 </section>

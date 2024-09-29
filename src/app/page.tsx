@@ -68,6 +68,15 @@ Special recognition goes to Sayyad Malik, who emerged as the top performer with 
                 date="14 Sept 2024"
                 postUrl="srujan"
               />
+              <ArticleCard
+                key="1"
+                thumbnail="/Images/EUREKA Post.png"
+                title="Eureka"
+                content=""
+                author={{ name: "ECELL JNEC", avatar: "/Images/ECELL JNEC.png" }}
+                date="1 Oct 2024"
+                postUrl="post"
+              />
               </div>
         <button className="blue-button mx-auto mt-8 w-max">Loading more...</button>
       </section>
