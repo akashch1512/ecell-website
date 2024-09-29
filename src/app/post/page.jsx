@@ -43,11 +43,21 @@ function Eureka2024() {
 
   return (
     <main className='text-gray-900 bg-white px-8 py-12'>
+
+<section className='flex justify-center mb-8'>
+        <Image
+          src='/Images/eureka_l.png' // Path to the Eureka logo with transparent background
+          alt='Eureka 2024 Logo'
+          width={400}
+          height={400}
+        />
+      </section>
+
       {/* Header Section */}
       <header className='text-center mb-8'>
-        <h1 className='text-4xl font-bold text-primary-500 mb-4'>Eureka 2024 Business Model Pitching Competition</h1>
+        {/* <h1 className='text-4xl font-bold text-primary-500 mb-4'>Eureka 2024 Business Model Pitching Competition</h1> */}
         <p className='text-xl text-gray-700'>
-          Are you ready to bring your innovative ideas to life and showcase your entrepreneurial spirit?
+          Are you ready to bring your innovative ideas to life and showcase your<br></br>entrepreneurial spirit?
         </p>
       </header>
 
