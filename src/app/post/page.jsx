@@ -1,20 +1,43 @@
-// import React, { useEffect, useState } from 'react';
-// import { TbArrowBack } from 'react-icons/tb'; // If you want to use the back icon somewhere
-// import Image from 'next/image'; // Assuming you're using Next.js for React
-
 // src/app/post/page.jsx
 
 "use client"; // Add this line to mark the component as a Client Component
 
 import React, { useEffect, useState } from 'react';
-// import { TbArrowBack } from 'react-icons/tb'; // If you want to use the back icon somewhere
 import Image from 'next/image'; // Assuming you're using Next.js for React
 
-// Your existing component code here
-
-
-
 function Eureka2024() {
+  const faqs = [
+    {
+      question: "Why we need to register on both the ECELL IIT Bombay portal and the ECELL JNEC portal?",
+      answer: "Registration on the IIT Bombay portal is crucial for progressing to the next level, while registration on the JNEC portal is essential for completing your participation requirements."
+    },    
+    {
+      question: "Who can participate in Eureka 2024?",
+      answer: "The competition is open to all students, entrepreneurs, and startups. Anyone with a viable business idea is welcome to participate."
+    },
+    
+    {
+      question: "How do I register for the competition?",
+      answer: "You need to register on the IIT Bombay Eureka portal and also complete the E-Cell JNEC registration form."
+    },
+    {
+      question: "Is there a registration fee?",
+      answer: "No, registration for Eureka 2024 is free."
+    },
+    {
+      question: "When will the event take place?",
+      answer: "The date is yet to be declared, but it will run from 10:00 AM to 5:00 PM."
+    }
+  ];
+
+  // FAQ toggle state
+  const [openIndex, setOpenIndex] = useState(null);
+
+  // Function to toggle the FAQ answer
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   const [timeLeft, setTimeLeft] = useState('');
 
   useEffect(() => {
@@ -43,8 +66,7 @@ function Eureka2024() {
 
   return (
     <main className='text-gray-900 bg-white px-8 py-12'>
-
-<section className='flex justify-center mb-8'>
+      <section className='flex justify-center mb-8'>
         <Image
           src='/Images/eureka_l.png' // Path to the Eureka logo with transparent background
           alt='Eureka 2024 Logo'
@@ -55,9 +77,8 @@ function Eureka2024() {
 
       {/* Header Section */}
       <header className='text-center mb-8'>
-        {/* <h1 className='text-4xl font-bold text-primary-500 mb-4'>Eureka 2024 Business Model Pitching Competition</h1> */}
         <p className='text-xl text-gray-700'>
-          Are you ready to bring your innovative ideas to life and showcase your<br></br>entrepreneurial spirit?
+          Are you ready to bring your innovative ideas to life and showcase your<br />entrepreneurial spirit?
         </p>
       </header>
 
@@ -76,8 +97,6 @@ function Eureka2024() {
             </a>
             <p className='mt-4 text-lg text-gray-700'>
               Do make sure to register on the Official Eureka Portal using the referral code <strong>NEC242178</strong>, to finalize your Team Registration.
-              <br />
-              
             </p>
             <p className='mt-2 text-red-500 text-sm font-semibold'>⏳ Time left: {timeLeft}</p>
           </div>
@@ -145,7 +164,7 @@ function Eureka2024() {
       </section>
 
       {/* Instagram Section */}
-      <section className='text-center'>
+      <section className='text-center mb-16'>
         <h2 className='text-2xl font-semibold text-primary-500 mb-6'>Follow Us on Instagram</h2>
         <div className='mt-6'>
           <a href='https://www.instagram.com/ecell_jnec?utm_source=qr&igsh=MWY1OW1jZndwMzlqNw==' target='_blank' rel='noopener noreferrer'>
@@ -153,6 +172,26 @@ function Eureka2024() {
               Follow E-Cell JNEC on Instagram
             </button>
           </a>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className='mb-16'>
+        <h2 className='text-2xl font-semibold text-primary-500 mb-6 text-center'>Frequently Asked Questions</h2>
+        <div className='space-y-4'>
+          {faqs.map((faq, index) => (
+            <div key={index} className='border-b pb-2'>
+              <button 
+                onClick={() => toggleFAQ(index)} 
+                className='text-left w-full font-medium text-lg text-gray-800 focus:outline-none'
+              >
+                {faq.question}
+              </button>
+              {openIndex === index && (
+                <p className='mt-2 text-gray-700'>{faq.answer}</p>
+              )}
+            </div>
+          ))}
         </div>
       </section>
     </main>
