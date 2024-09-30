@@ -25,7 +25,7 @@ function Eureka2024() {
       const difference = targetDate - now;
 
       if (difference <= 0) {
-        setTimeLeft('Deadline has Extended');
+        setTimeLeft('Deadline has been extended! Register ASAP to grab the chance.');
         return;
       }
 
