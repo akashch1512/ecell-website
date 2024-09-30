@@ -25,7 +25,7 @@ function Eureka2024() {
       const difference = targetDate - now;
 
       if (difference <= 0) {
-        setTimeLeft('Deadline has passed');
+        setTimeLeft('Deadline has Extended');
         return;
       }
 
@@ -112,9 +112,9 @@ function Eureka2024() {
       <section className='mb-16'>
         <h2 className='text-2xl font-semibold text-primary-500 mb-6 text-center'>Event Details</h2>
         <div className='text-lg text-gray-700 text-center'>
-          <p>📅 <strong>Date:</strong> 1st October 2024</p>
+          <p>📅 <strong>Date:</strong> Yet to declare </p>
           <p>🕒 <strong>Time:</strong> 10:00 AM to 5:00 PM</p>
-          <p>📍 <strong>Venue:</strong> Aryabhatta Hall, MGMU JNEC</p>
+          <p>📍 <strong>Venue:</strong> Yet to declare </p>
         </div>
       </section>
 
