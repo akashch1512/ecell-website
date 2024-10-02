@@ -48,8 +48,8 @@ function HeroSection() {
           <div className="flex flex-col gap-1 sm:max-w-[100%] sm:gap-2">
             <div className="font-bold sm:block text-white">Most popular</div>
             <Link href="post">
-              <h3 className="text-3xl font-bold sm:text-3xl text-white">
-            Eureka 2K24 !  Click here for Details!!!
+              <h3 className="text-3xl font-bold sm:text-3xl hover:text-blue-500 text-white">
+            Eureka 2K24 ! Participate here Now !!
               </h3>
             </Link>
             <div className="mt-2 flex items-center gap-1 font-bold sm:hidden">
