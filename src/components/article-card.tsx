@@ -8,11 +8,44 @@ interface Author {
     avatar: string;
 }
 
-export default function ArticleCard({ thumbnail, title, content, author, date, postUrl, className }: { thumbnail: string, title: string, content: string, author: Author, date: string, postUrl: string, className?: string }) {
+interface ArticleCardProps {
+    thumbnail: string; // This can be a video or an image URL
+    title: string;
+    content: string;
+    author: Author;
+    date: string;
+    postUrl: string;
+    className?: string;
+}
+
+export default function ArticleCard({ thumbnail, title, content, author, date, postUrl, className }: ArticleCardProps) {
+    const isThumbnailVideo = thumbnail.endsWith(".mp4") || thumbnail.endsWith(".webm") || thumbnail.endsWith(".ogg"); // Check for video formats
+
     return (
         <div className={className}>
             <Link href={postUrl}>
-                <Image src={thumbnail} width={300} height={200} alt="hero image" className="min-w-full rounded-xl" />
+                {isThumbnailVideo ? (
+                    <video 
+                        width={300} 
+                        height={200} 
+                        className="min-w-full rounded-xl" 
+                        autoPlay 
+                        loop 
+                        muted 
+                        playsInline
+                    >
+                        <source src={thumbnail} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                ) : (
+                    <Image 
+                        src={thumbnail} 
+                        width={300} 
+                        height={200} 
+                        alt="hero image" 
+                        className="min-w-full rounded-xl" 
+                    />
+                )}
             </Link>
             <div className="mt-4 flex flex-col gap-1">
                 <div className="flex items-start justify-between">
@@ -24,7 +57,7 @@ export default function ArticleCard({ thumbnail, title, content, author, date, p
                     </Link>
                 </div>
                 <Link href={postUrl}>
-                    <p >{content}</p>
+                    <p>{content}</p>
                 </Link>
                 <div className="mt-2 flex items-center gap-1 font-bold">
                     <Avatar src={author.avatar} alt="avatar" size={32} />
@@ -35,4 +68,4 @@ export default function ArticleCard({ thumbnail, title, content, author, date, p
             </div>
         </div>
     );
-};
+}

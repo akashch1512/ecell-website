@@ -38,7 +38,7 @@ Special recognition goes to Sayyad Malik, who emerged as the top performer with 
               />
               <ArticleCard
                 key="1"
-                thumbnail="/Images/The First Step.svg"
+                thumbnail="/Images/srujan.mp4"
                 title="Srujan Event Conducted By Ecell JNEC"
                 content="marking the beginning of an exciting entrepreneurial journey. The event featured an engaging orientation and introduction, followed by a thought-provoking guest talk on 'Ideation.' Attendees also benefited from a dynamic panel discussion that explored various aspects of innovation. The event concluded with the launch of the team recruitment drive, giving participants the chance to join and contribute to the E-Cell."
                 author={{ name: "ECELL JNEC", avatar: "/Images/ECELL JNEC.png" }}
