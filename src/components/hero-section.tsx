@@ -1,12 +1,13 @@
 'use client'; // Mark the component as a Client Component
 
-import React, { useEffect, useRef } from 'react';
-import Link from 'next/link';
-import Avatar from './avatar';
+import React, { useEffect, useRef, useState } from 'react';
 import 'animate.css'; // Importing animate.css for animations
 
 function HeroSection() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [events, setEvents] = useState(0);
+  const [communityMembers, setCommunityMembers] = useState(0);
+  const [Members, setMembers] = useState(0);
 
   useEffect(() => {
     // Scroll-based video playback
@@ -32,55 +33,87 @@ function HeroSection() {
     };
   }, []);
 
+  useEffect(() => {
+    // Increment animation for events
+    const eventsInterval = setInterval(() => {
+      setEvents((prev) => {
+        if (prev < 3) {
+          return prev + 1; // Increment until reaching 3
+        }
+        clearInterval(eventsInterval); // Clear interval when done
+        return prev;
+      });
+    }, 1000); // Change the interval as necessary
+
+    // Increment animation for community members
+    const communityInterval = setInterval(() => {
+      setCommunityMembers((prev) => {
+        if (prev < 200) {
+          return prev + 20; // Increment by 20 until reaching 200
+        }
+        clearInterval(communityInterval); // Clear interval when done
+        return prev;
+      });
+    }, 100); // Change the interval as necessary
+
+    const membersInterval = setInterval(() => {
+      setMembers((prev) => {
+        if (prev < 8) {
+          return prev + 2; // Increment by 2 until reaching 8
+        }
+        clearInterval(membersInterval); // Clear interval when done
+        return prev;
+      });
+    }, 100);
+
+    // Cleanup intervals on unmount
+    return () => {
+      clearInterval(eventsInterval);
+      clearInterval(communityInterval);
+      clearInterval(membersInterval);
+    };
+  }, []);
+
   return (
-    <section className="w-full h-screen overflow-hidden mb-16">
+    <section className="w-full h-screen overflow-hidden mb-2">
       {/* Background Video */}
       <video
         ref={videoRef}
         src="/Images/scroll.mp4" // Change to your background video file
         playsInline
-        className="absolute top-0 left-0 w-full h-[100%] object-cover z-0 sm:h-[150%]"
+        className="absolute top-0 left-0 mb:w-[100%] w-[100%] h-[130%] mb:h-screen object-cover z-0"
       >
         Your browser does not support the video tag.
       </video>
-
-      <div className="mx-auto mb-8 w-3/4 text-center text-white relative z-10">
-        <h1 className="mb-4 text-4xl font-bold sm:text-6xl text-white animate__animated animate__fadeInUp">
-          Grow Ideas💡into Reality🌱 
+      <div className="mx-auto mb-8 w-full max-w-4xl text-center text-white relative z-10 px-4">
+        <h1 className="mb-4 text-4xl font-bold sm:text-6xl animate__animated animate__fadeInUp">
+          E-Cell JNEC
         </h1>
-        <p className="animate__animated animate__fadeInUp">
+        <p className="animate__animated animate__fadeInUp mb-4">
           Empowering student innovators & entrepreneurs at JNEC.
         </p>
-      </div>
-      
-      <div className="relative z-10 flex flex-col gap-6 mx-auto max-w-5xl sm:text-white">
-        {/* Hero Video */}
-        <video
-          src="/Images/Hero video.mp4"
-          width={1000}
-          height={800}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-auto rounded-lg object-cover object-center"
-        >
-          Your browser does not support the video tag.
-        </video>
+        <p className="animate__animated animate__fadeInUp mb-4">
+        <strong>Established in 2024</strong> by the Electronics Department at JNEC <strong>under the NEC IIT Bombay challenge</strong>, E-Cell JNEC nurtures innovation and entrepreneurship by providing essential resources and support for aspiring entrepreneurs to turn their ideas into successful ventures.
+        </p>
 
-        <div className="sm:absolute sm:bottom-0 sm:m-8 sm:rounded-lg sm:border sm:border-black/30 sm:p-6 sm:py-5 sm:backdrop-blur-2xl sm:bg-black text-white">
-          <div className="flex flex-col gap-1 sm:max-w-[100%] sm:gap-2">
-            <div className="font-bold sm:block text-white">Most Popular</div>
-            <Link href="post">
-              <h3 className="text-3xl font-bold sm:text-3xl hover:text-blue-500 text-white">
-                Glimpse of Our Past Event 📸
-              </h3>
-            </Link>
-            <div className="mt-2 flex items-center gap-1 font-bold sm:hidden">
-              <Avatar src="/Images/ECELL JNEC.png" alt="avatar" size={32} />
-              <p className="ml-2">ECELL JNEC</p> • <p>16 Jan 2024</p>
-            </div>
+        {/* Flex Container for Statistics */}
+        <div className="flex flex-col sm:flex-row justify-around items-center mb-4 w-full">
+          {/* First Item */}
+          <div className="flex flex-col items-center animate__animated animate__fadeInUp mb-4 sm:mb-0 w-full sm:w-1/2 max-w-xs">
+            <img src="/Images/start-up.png" alt="Events" className="w-16 h-16 mb-2" />
+            <span className="text-lg">{events}+<br />Events Conducted</span>
           </div>
+          {/* Second Item */}
+          <div className="flex flex-col items-center animate__animated animate__fadeInUp mb-4 sm:mb-0 w-full sm:w-1/2 max-w-xs">
+            <img src="/Images/graduating-student.png" alt="Community Members" className="w-16 h-16 mb-2" />
+            <span className="text-lg">{communityMembers}+<br />Community Members</span>
+          </div>
+        </div>
+
+        {/* Bottom Item */}
+        <div className="flex flex-col items-center animate__animated animate__fadeInUp mb-4 w-full max-w-xs mx-auto">
+          <img src="/Images/smart-city.png" alt="Members" className="w-16 h-16 mb-2" />
+          <span className="text-lg">{Members}+<br />Members</span>
         </div>
       </div>
     </section>
