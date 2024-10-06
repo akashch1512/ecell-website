@@ -1,7 +1,5 @@
 "use client";
 import Image from 'next/image';
-
-
 import Link from "next/link";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -25,18 +23,16 @@ export default function Header() {
     const optionClassName = "text-xs font-normal sm:text-base";
 
     return (
-        <header className="mb-16 flex items-center justify-between sm:mb-24 text-white">
-            <h1 className="text-xl font-extrabold text-blue-300">
-            <Image 
-    src="/Images/image-removebg-preview.png"  // path to your image
-    alt="E-CELL JNEC Logo" 
-    width={100} // adjust the width as per your requirement
-    height={25} // adjust the height as per your requirement
-    className="object-contain"
-
-/>ECELL JNEC
-
-</h1>
+        <header className="mb-16 flex items-center justify-between sm:mb-24 text-white relative z-20"> {/* Added z-20 */}
+            <h1 className="text-xl font-extrabold text-blue-300 items-center">
+                <Image 
+                    src="/Images/image-removebg-preview.png"  // path to your image
+                    alt="E-CELL JNEC Logo" 
+                    width={100} // adjust the width as per your requirement
+                    height={25} // adjust the height as per your requirement
+                    className="object-contain"
+                />ECELL JNEC
+            </h1>
             <div className={`fixed right-0 top-0 ${open ? 'flex' : 'hidden'} z-10 w-full h-full gap-4 bg-gray-900/95 sm:static sm:flex sm:w-auto sm:h-auto sm:bg-transparent`}>
                 <button className="absolute right-8 top-8 sm:hidden" onClick={handleClose}><IoClose size={iconsSize} className="text-white" /></button>
                 <ul className="container mx-20 mt-32 flex flex-col gap-8 sm:mx-0 sm:mt-0 sm:flex-row sm:gap-4">

@@ -8,7 +8,7 @@ export default function Home() {
     
        <HeroSection />
 
-      <section className="flex flex-col gap-8">
+      <section className="flex flex-col gap-8 z-40">
         <div className="flex items-center justify-between">
           <h2 className="text-xl font-bold text-white">Recent posts</h2>
           <a href="" className="blue-button">View all</a>
