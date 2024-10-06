@@ -18,10 +18,10 @@ function HeroSection() {
     <section>
       <div className="mx-auto mb-8 w-3/4 text-center text-white">
         <h1 className="mb-4 text-4xl font-bold sm:text-6xl text-white animate__animated animate__fadeInUp">
-          Our Recent Achievement
+        Grow Ideas💡into Reality🌱 
         </h1>
         <p className="animate__animated animate__fadeInUp">
-          Empowering student innovators & entrepreneurs at JNEC. 💡🚀
+        Empowering student innovators & entrepreneurs at JNEC.
         </p>
       </div>
       <div className="flex flex-col gap-6 sm:relative sm:text-white">
@@ -33,7 +33,7 @@ function HeroSection() {
           className="max-h-[300px] min-w-full rounded-3xl object-cover object-center sm:max-h-[600px]"
         /> */}
          <video
-    src="/Images/EUREKA Video.mp4"
+    src="/Images/Hero video.mp4"
     width={300}
     height={200}
     autoPlay
@@ -46,10 +46,10 @@ function HeroSection() {
   </video>
         <div className="sm:absolute sm:bottom-0 sm:m-8 sm:rounded-2xl sm:border sm:border-black/30 sm:p-6 sm:py-5 sm:backdrop-blur-2xl sm:bg-black text-white">
           <div className="flex flex-col gap-1 sm:max-w-[100%] sm:gap-2">
-            <div className="font-bold sm:block text-white">Most popular</div>
+            <div className="font-bold sm:block text-white">Most Popular</div>
             <Link href="post">
               <h3 className="text-3xl font-bold sm:text-3xl hover:text-blue-500 text-white">
-            Eureka 2K24 ! Participate here Now !!
+              Glimpse of Our Past Event 📸
               </h3>
             </Link>
             <div className="mt-2 flex items-center gap-1 font-bold sm:hidden">
