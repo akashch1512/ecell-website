@@ -1,27 +1,43 @@
 'use client'; // Mark the component as a Client Component
 
-import React, { useEffect } from 'react';
-// import Image from 'next/image';
+import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Avatar from './avatar';
 import 'animate.css'; // Importing animate.css for animations
 
 function HeroSection() {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
   useEffect(() => {
-    const textElements = document.querySelectorAll('.animate__animated, .animate__fadeInUp');
-    textElements.forEach((element) => {
-      element.classList.add('animate__animated', 'animate__fadeInUp');
-    });
+    // Scroll-based video playback
+    const handleScroll = () => {
+      const video = videoRef.current;
+      if (video) {
+        // Calculate the scroll position
+        const scrollPosition = window.scrollY;
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+
+        // Set the video's current time relative to the scroll position
+        const scrollFraction = scrollPosition / maxScroll;
+        video.currentTime = scrollFraction * video.duration;
+      }
+    };
+
+    // Attach scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup on unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
-    <section className="w-full h-screen overflow-hidden mb-16"> {/* Add margin bottom here */}
+    <section className="w-full h-screen overflow-hidden mb-16">
       {/* Background Video */}
       <video
-        src="\Images\scroll.mp4" // Change to your background video file
-        autoPlay
-        loop
-        muted
+        ref={videoRef}
+        src="/Images/scroll.mp4" // Change to your background video file
         playsInline
         className="absolute top-0 left-0 w-full h-[100%] object-cover z-0 sm:h-[150%]"
       >
